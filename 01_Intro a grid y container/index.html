@@ -6,11 +6,17 @@
         <title>01 - Intro a grid y container</title>
         
         <style>
+            h2 {
+                text-align: center;
+            }
+            
             div {
-                background: #770000;
-                color: #EEBBBB;
+                background: #4444BB;
+                color: #BBBBEE;
                 height: 250px;
                 margin: 10px 0;
+                text-align: center;
+                border: 1px solid #FFFFFF;
             }
         </style>
         
@@ -29,50 +35,98 @@
         Cuando le damos la clase .row a un elemento HTML,
         estamos indicando que se trata de una fila de bootstrap.
         
+        BREAKPOINTS:
+        Dimensión (ancho del viewport) a partir del cual podemos cambiar el
+        estilo o la estructura de la página web. Los 6 breakpoints
+        de bootstrap son:
+            xs (extra small, < 576px)
+            sm (small, >= 576px)
+            md (medium, >= 768px)
+            lg (large, >= 992px)
+            xl (extra large, >= 1200px)
+            xxl (extra extra large, >= 1400px)
+        
         COLUMNAS:
-        .col- o .col-xs- (extra small, < 576px)
-        .col-sm- (small, >= 576px)
-        .col-md- (medium, >= 768px)
-        .col-lg- (large, >= 992px)
-        .col-xl- (extra large, >= 1200px)
-        .col-xxl- (extra extra large, >= 1400px)
-        Dichas dimensiones representan los anchos del viewport.
+            .col-
+            .col-xs-
+            .col-sm-
+            .col-md-
+            .col-lg-
+            .col-xl-
+            .col-xxl-
         Luego del - final se indica un número del 1 al 12 que
         representa el número de columnas que ocupará el elemento
         al cual le aplicamos una de estas clases.
         
-        BREAKPOINTS:
-        Dimensión (ancho) a partir del cual podemos cambiar el
-        estilo o la estructura de la página web. Los 6 breakpoints
-        de bootstrap son "xs", "sm", "md", "lg", "xl" y "xxl".
-        
-        CONTENEDORES:
+        CONTENEDORES FIJOS:
         Cuando le damos la clase .container a un elemento HTML,
         estamos creando un contenedor responsivo con un ANCHO
         MÁXIMO FIJO que depende del tamaño del dispositivo.
+        
+        CONTENEDORES FLUIDOS:
         Cuando le damos la clase .container-fluid a un elemento HTML,
         estamos creando un contenedor responsivo que CUBRE EL 100%
         DEL ANCHO DE LA VENTANA.
+        
+        CONTENEDORES FLUIDOS CON ANCHO MÁXIMO:
         Podemos crear un contenedor responsivo que cubre 100% del
         ancho de la ventana HASTA QUE llega a las dimensiones de
         un breakpoint, mediante las clases:
-        .container-sm
-        .container-md
-        .container-lg
-        .container-xl
-        .container-xxl
+            .container-sm
+            .container-md
+            .container-lg
+            .container-xl
+            .container-xxl
         ------------------------------------------------------------>
         
+        <h2>Práctica de containers:</h2>
         <div class="container">
             div con clase .container (tiene un max-width fijo, definido por bootstrap según el ancho de la ventana)
         </div>
-        
         <div class="container-fluid">
             div con clase .container-fluid (ocupa el 100% del ancho de la ventana)
         </div>
-        
         <div class="container-lg">
             div con clase .container-lg (Se comporta como .container-fluid (ocupa el 100% del ancho de la ventana) Hasta que llega al breakpoint dado (en este caso lg) el cual actúa como max width.)
+        </div>
+        
+        <h2>Práctica de columnas con breakpoints:</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-lg-6">
+                    col-sm-4: a partir de dispositivos sm (mayores que 576px) ocupa 4 columnas
+                    <br><br>
+                    col-lg-6: a partir de dispositivos lg (mayores que 992px) ocupa 6 columnas
+                </div>
+                <div class="col-sm-8 col-lg-6">
+                    col-sm-8: a partir de dispositivos sm (mayores que 576px) ocupa 8 columnas
+                    <br><br>
+                    col-lg-6: a partir de dispositivos lg (mayores que 992px) ocupa 6 columnas
+                </div>
+            </div>
+        </div>
+        
+        <h2>Práctica de filas y columnas:</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    Columna 1
+                </div>
+                <div class="col">
+                    Columna 2
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    Columna 1
+                </div>
+                <div class="col">
+                    Columna 2
+                </div>
+                <div class="col">
+                    Columna 3
+                </div>
+            </div>
         </div>
     </body>
 </html>
