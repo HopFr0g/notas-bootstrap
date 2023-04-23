@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <!-- Metadatos: -->
+    <meta charset="utf-8">
+    <meta name="author" content="Leonel Poletti">
+    <meta name="description" content="Proyecto final del curso de Bootstrap: Portafolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Título: -->
+    <title>Proyecto final</title>
+    
+    <!-- Ícono -->
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.png">
+    
+    <!-- Bootstrap: -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    
+    <!-- CSS: -->
+    <link href="main.css" rel="stylesheet">
+    
+    <!-- Fuentes: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Kanit&family=Raleway&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/favicon.png" width="50" alt="Logo de la página">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos-recientes">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Sección hero (principal): -->
+    <section class="hero align-items-stretch text-center">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/perfil.jpg" alt="Foto de Cosme Fulanito">
+        <h1>Hola, soy Cosme Fulanito</h1>
+        <h2>Desarrollo sitios web.</h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.jpg" alt="Trabajando">
+      </div>
+    </section>
+    
+    <!-- Sección "sobre mí": -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Cosme Fulanito</h2>
+        <p class="seccion-texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos sit ducimus, officia provident nisi fugiat vero beatae recusandae laborum similique a atque fugit laudantium dignissimos sint esse exercitationem! Voluptatibus, veniam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, non provident aperiam consequatur sunt magnam illo eum mollitia repellendus explicabo aspernatur quo nesciunt repudiandae molestias corporis cupiditate incidunt iusto ducimus!</p>
+      </div>
+    </section>
+    
+    <!-- Sección experiencia: -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo web: -->
+          <div class="columna col-12 col-md-4">
+            <!-- Ocupa 4 columnas a partir de ventanas con ancho mayor a md -->
+            <!-- De lo contrario, ocupa la fila completa (las 12 columnas) -->
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo web</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet autem velit sed error accusamus hic veniam, aspernatur alias sit odio vel perferendis eaque id ab impedit voluptatum, accusantium nesciunt quam.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">Bootstrap</span>
+            </div>
+          </div>
+          <!-- Artículos: -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-book"></i>
+            <p class="experiencia-titulo">Artículos</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet autem velit sed error accusamus hic veniam, aspernatur alias sit odio vel perferendis eaque id ab impedit voluptatum, accusantium nesciunt quam.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Escribir</span>
+              <span class="badge text-bg-primary">Editar</span>
+              <span class="badge text-bg-primary">Blogs</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-mortarboard"></i>
+            <p class="experiencia-titulo">Estudiante</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet autem velit sed error accusamus hic veniam, aspernatur alias sit odio vel perferendis eaque id ab impedit voluptatum, accusantium nesciunt quam.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Springfield</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sección de proyectos recientes: -->
+    <section id="proyectos-recientes" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <h3 class="seccion-descripcion">Algunos proyectos que he creado recientemente</h3>
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto-1.jpeg">
+              <div class="overlay">
+                <p>Proyecto 1</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto-2.png">
+              <div class="overlay">
+                <p>Proyecto 2</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto-3.jpg">
+              <div class="overlay">
+                <p>Proyecto 3</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto-4.jpg">
+              <div class="overlay">
+                <p>Proyecto 4</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto-5.jpg">
+              <div class="overlay">
+                <p>Proyecto 5</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto-6.jpg">
+              <div class="overlay">
+                <p>Proyecto 6</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+    
+    <!-- Sección artículos: -->
+    <section class="articulos justify-content-start">
+      <h2 class="seccion-titulo texto-negro">Artículos</h2>
+      <div class="card">
+        <div class="card-header">
+          Más recientes
+        </div>
+        <ul class="list-group list-group-flush">
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Artículo 1</li>
+          </a>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Artículo 2</li>
+          </a>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Artículo 3</li>
+          </a>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Artículo 4</li>
+          </a>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Artículo 5</li>
+          </a>
+        </ul>
+      </div>
+      <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más artículos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+    
+    <!-- Sección testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes</h3>
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/testimonio-1.jpg" alt="Lenny">
+              <p class="testimonio-texto">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto ab quod, voluptatem dignissimos repudiandae vel voluptas odio quas a? Omnis labore nihil laboriosam ea, temporibus voluptatem dolore cumque minima odit.
+              </p>
+              <div class="testimonio-info">
+                <p class="cliente">Lenny</p>
+                <p class="cargo">Sector 7G de la Planta de Energía Nuclear</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/testimonio-2.jpg" alt="Moe">
+              <p class="testimonio-texto">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto ab quod, voluptatem dignissimos repudiandae vel voluptas odio quas a? Omnis labore nihil laboriosam ea, temporibus voluptatem dolore cumque minima odit.
+              </p>
+              <div class="testimonio-info">
+                <p class="cliente">Moe</p>
+                <p class="cargo">Taberna de Moe</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/testimonio-3.jpg" alt="Hombre Sí">
+              <p class="testimonio-texto">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto ab quod, voluptatem dignissimos repudiandae vel voluptas odio quas a? Omnis labore nihil laboriosam ea, temporibus voluptatem dolore cumque minima odit.
+              </p>
+              <div class="testimonio-info">
+                <p class="cliente">Hombre sí</p>
+                <p class="cargo">Joyería</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+    
+    <!-- Sección contacto: -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para iniciar tu proyecto de desarrollo web.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:cosmefulanito@gmail.com">
+                <button type="button">
+                  Contacto
+                  <i class="bi bi-envelope-check"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sección footer: -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+      <img class="footer-logo" src="imagenes/icono.png" alt="Logo del portafolio">
+      <p class="footer-texto text-center">¡Buenas noches, señores!<br>Molesto con una copilla... ¿Por favor?</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="mailto:cosmefulanito@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">&#169; Creado por Cosme Fulanito (2023)</div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
